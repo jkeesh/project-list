@@ -83,6 +83,7 @@ var PROJECTS = [
         'source': 'https://github.com/jkeesh/project-list',
         'dateStarted': '2015',
         'category': 'Personal',
+        'image': 'projectlist.png',
     },
     {
         'name': 'Mission Dinners',
@@ -91,6 +92,7 @@ var PROJECTS = [
         'status': 'Active',
         'dateStarted': '2013',
         'category': 'Personal',
+        'image': 'missiondinners.png',
     },
     {
         'name': 'Mission Book Club',
@@ -99,6 +101,7 @@ var PROJECTS = [
         'status': 'Active',
         'dateStarted': '2013',
         'category': 'Personal',
+        'image': 'missionbookclub.png',
     },
     {
         'name': 'Realtime Listserve Map',
@@ -108,6 +111,7 @@ var PROJECTS = [
         'status': 'Active',
         'dateStarted': '2015',
         'category': 'Personal',
+        'image': 'listserve.png',
     },
     {
         'name': 'Bitcoin Shovels',
@@ -117,6 +121,7 @@ var PROJECTS = [
         'dateStarted': '2014',
         'category': 'Comedy',
         'source': 'https://github.com/jkeesh/bitcoin-shovels',
+        'image': 'bitcoinshovels.png',
     },
     {
         'name': 'Stanford Flipside',
@@ -125,6 +130,7 @@ var PROJECTS = [
         'status': 'Active',
         'dateStarted': '2008',
         'category': 'Flipside',
+        'image': 'stanfordflipside.png',
     },
     {
         'name': 'DHS Flipside',
@@ -133,6 +139,7 @@ var PROJECTS = [
         'status': 'Active',
         'dateStarted': '2005',
         'category': 'Flipside',
+        'image': 'dhsflipside.png',
     },
     {
         'name': 'Flipside News',
@@ -141,14 +148,16 @@ var PROJECTS = [
         'status': 'Active',
         'dateStarted': '2008',
         'category': 'Flipside',
+        'image': 'flipsidenews.png',
     },
     {
         'name': 'Flipside Convention',
         'description': 'Informational site for the Flipside 10 year convention',
-        'link': 'http://flipideconvention.com',
+        'link': 'http://flipsideconvention.com',
         'status': 'Active',
         'dateStarted': '2015',
         'category': 'Flipside',
+        'image': 'flipsideconvention.png',
     },
     {
         'name': 'SCPD Scraper',
@@ -158,15 +167,17 @@ var PROJECTS = [
         'dateStarted': '2011',
         'source': 'https://github.com/jkeesh/scpd-scraper',
         'category': 'Stanford',
+        'image': 'scpd.png',
     },
     {
         'name': 'Citation Missing',
         'description': 'Project for comedy hackathon to easily edit wikipedia pages',
-        'link': 'x',
+        'link': 'http://thekeesh.com/citation',
         'status': 'Not Active',
         'source': 'https://github.com/jkeesh/citation-missing',
         'category': 'Comedy',
-        'dateStarted': '2013'
+        'dateStarted': '2013',
+        'image': 'wiki.png',
     },
     {
         'name': 'YouTube Sloth',
@@ -175,6 +186,7 @@ var PROJECTS = [
         'link': 'http://thekeesh.com/ytsloth',
         'category': 'Comedy',
         'dateStarted': '2010',
+        'image': 'ytsloth.png',
     },
     {
         'name': 'Your Money or Your Life Crossover Visualization',
@@ -184,6 +196,7 @@ var PROJECTS = [
         'dateStarted': '2015',
         'category': 'Finance',
         'status': 'Active',
+        'image': 'ymoyl.png',
     },
     {
         'name': 'Jumble Maker',
@@ -193,6 +206,7 @@ var PROJECTS = [
         'status': 'Active',
         'category': 'Flipside',
         'dateStarted': '2012',
+        'image': 'jumbles.png',
     },
     {
         'name': 'Where is the 1%?',
@@ -202,6 +216,7 @@ var PROJECTS = [
         'source': 'https://github.com/jkeesh/onepercent',
         'category': 'School Projects',
         'dateStarted': '2011',
+        'image': 'one_percent.png',
     },
     {
         'name': 'Jitterbunk',
@@ -210,7 +225,8 @@ var PROJECTS = [
         'status': 'Not Active',
         'source': 'https://github.com/jkeesh/jitterbunk',
         'category': 'Comedy',
-        'dateStarted': '2011'
+        'dateStarted': '2011',
+        'image': 'jitterbunk.png',
     },
     {
         'name': 'Cryptogram Maker',
@@ -220,6 +236,7 @@ var PROJECTS = [
         'status': 'Active',
         'category': 'Flipside',
         'dateStarted': '2012',
+        'image': 'cryptogram.png',
     },
     {
         'name': 'Paperless',
@@ -229,6 +246,7 @@ var PROJECTS = [
         'status': 'Active',
         'dateStarted': '2010',
         'category': 'Stanford',
+        'image': 'paperless.png',
     },
     {
         'name': 'Study Guide Generator',
@@ -238,6 +256,7 @@ var PROJECTS = [
         'status': 'Active',
         'dateStarted': '2011',
         'category': 'Small App',
+        'image': 'study.png',
     },
     {
         'name': 'Mission Tacos',
@@ -247,6 +266,7 @@ var PROJECTS = [
         'status': 'Not Active',
         'dateStarted': '2013',
         'category': 'Small App',
+        'image': 'missiontacos.jpg',
     },
     {
         'name': 'Visualize Friends',
@@ -256,6 +276,7 @@ var PROJECTS = [
         'status': 'Not Active',
         'dateStarted': '2013',
         'category': 'Small App',
+        'image': 'fb_friends.png',
     },
     {
         'name': 'Popular Site Template',
@@ -265,6 +286,7 @@ var PROJECTS = [
         'status': 'Not Active',
         'dateStarted': '2010',
         'category': 'Small App',
+        'image': 'mlia.png',
     },
     {
         'name': 'Best to Top',
@@ -274,6 +296,7 @@ var PROJECTS = [
         'status': 'Not Active',
         'dateStarted': '2011',
         'category': 'Small App',
+        'image': 'brainstorm.jpg',
     },
     {
         'name': 'Biology Project',
@@ -283,6 +306,7 @@ var PROJECTS = [
         'status': 'Active',
         'dateStarted': '2005',
         'category': 'School Project',
+        'image': 'bio.png',
     },
     {
         'name': 'Paperless 2',
@@ -292,6 +316,7 @@ var PROJECTS = [
         'status': 'Not Active',
         'dateStarted': '2012',
         'category': 'Stanford',
+        'image': 'paperless.png',
     },
     {
         'name': 'Mutual Friends',
@@ -301,6 +326,7 @@ var PROJECTS = [
         'status': 'Not Active',
         'dateStarted': '2012',
         'category': 'Tool',
+        'image': 'fb_mutual.png',
     },
     {
         'name': 'QuestionHut',
@@ -310,6 +336,7 @@ var PROJECTS = [
         'status': 'Not Active',
         'dateStarted': '2011',
         'category': 'Stanford',
+        'image': 'questionhut.png',
     },
     {
         'name': 'Contacts',
@@ -319,6 +346,7 @@ var PROJECTS = [
         'status': 'Not Active',
         'dateStarted': '2012',
         'category': 'Small App',
+        'image': 'address.jpg',
     },
     {
         'name': 'Jeremy\'s List',
@@ -328,6 +356,7 @@ var PROJECTS = [
         'status': 'Not Active',
         'dateStarted': '2014',
         'category': 'Small App',
+        'image': 'craigslist.jpg',
     },
     {
         'name': 'Facebook Status Gender Classifier and Generator',
@@ -337,6 +366,7 @@ var PROJECTS = [
         'category': 'School Project',
         'status': 'Active',
         'dateStarted': '2011',
+        'image': 'fb_gender.png',
     },
     {
         'name': 'Type Shift Code',
@@ -346,6 +376,7 @@ var PROJECTS = [
         'status': 'Active',
         'dateStarted': '2011',
         'category': 'Tool',
+        'image': 'typeshift.png',
     },
     {
         'name': 'Lovescore with Bump',
@@ -354,6 +385,7 @@ var PROJECTS = [
         'status': 'Not Active',
         'dateStarted': '2010',
         'category': 'iPhone Apps',
+        'image': 'lovescore.png',
     },
     {
         'name': 'Stanford Flipside for iPhone',
@@ -362,6 +394,7 @@ var PROJECTS = [
         'status': 'Not Active',
         'dateStarted': '2010',
         'category': 'iPhone Apps',
+        'image': 'stanford_flipside_iphone.png',
     },
     {
         'name': 'Northwestern Flipside for iPhone',
@@ -370,6 +403,7 @@ var PROJECTS = [
         'status': 'Not Active',
         'dateStarted': '2010',
         'category': 'iPhone Apps',
+        'image': 'northwestern_flipside_iphone.png',
     },
     {
         'name': 'DHS Flipside Flipside for iPhone',
@@ -378,6 +412,7 @@ var PROJECTS = [
         'status': 'Not Active',
         'dateStarted': '2010',
         'category': 'iPhone Apps',
+        'image': 'dhs_flipside_iphone.png',
     },
     {
         'name': 'FormulaHelp',
@@ -386,6 +421,7 @@ var PROJECTS = [
         'status': 'Active',
         'dateStarted': '2010',
         'category': 'iPhone Apps',
+        'image': 'formula.png',
     },
     {
         'name': 'ColorSearch',
@@ -394,6 +430,7 @@ var PROJECTS = [
         'status': 'Active',
         'dateStarted': '2010',
         'category': 'iPhone Apps',
+        'image': 'colorsearch.png',
     },
     {
         'name': 'Social Norms on the Web: How To Create Productive Digital Communities',
@@ -402,6 +439,7 @@ var PROJECTS = [
         'dateStarted': '2012',
         'category': 'Papers',
         'status': 'Active',
+        'image': 'social_norms.png',
     },
     {
         'name': 'Machine Learning and Feature Based Approaches to Gender Classification of Facebook Statuses',
@@ -410,6 +448,7 @@ var PROJECTS = [
         'category': 'Papers',
         'link': 'http://thekeesh.com/cs224n/final_writeup.pdf',
         'status': 'Active',
+        'image': 'cs224n.png',
     },
     {
         'name': 'Read Very Carefully: An Examination of the Role of Satirical News In Promoting Media Literacy and Encouraging Engagement with Current Events',
@@ -418,6 +457,7 @@ var PROJECTS = [
         'link': 'http://www.thekeesh.com/docs/pwrfinal.pdf',
         'category': 'Papers',
         'status': 'Active',
+        'image': 'satire.png',
     },
     {
         'name': 'Computer Vision: Identification of Mugs, Clocks, Staplers and Scissors',
@@ -426,6 +466,7 @@ var PROJECTS = [
         'link': 'http://thekeesh.com/docs/vision.pdf',
         'category': 'Papers',
         'status': 'Active',
+        'image': 'mugs.png',
     },
     {
         'name': 'Coastal Partners Website',
@@ -435,6 +476,7 @@ var PROJECTS = [
         'status': 'Not Active',
         'dateStarted': '2009',
         'category': 'Business Website',
+        'image': 'coastal.jpg',
     },
     {
         'name': 'Java Blackjack',
@@ -442,7 +484,8 @@ var PROJECTS = [
         'link': '',
         'status': 'Not Active',
         'dateStarted': '2008',
-        'category': 'School Project'
+        'category': 'School Project',
+        'image': 'blackjack.png',
     },
     {
         'name': 'Java Guessing Game',
@@ -450,7 +493,8 @@ var PROJECTS = [
         'link': '',
         'status': 'Not Active',
         'dateStarted': '2007',
-        'category': 'School Project'
+        'category': 'School Project',
+        'image': 'guess.png',
     },
 
 ];
