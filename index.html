@@ -1,10 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Jeremy's Projects</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <style>
+        .name-col{
+            width: 20%;
+        }
+        .desc-col{
+            width: 30%;
+        }
+
+    </style>
+
+    <script>
+var PROJECTS = [
+    {
+        'name': 'CodeHS',
+        'description': 'Site for teaching coding to high schools.',
+        'link': 'http://codehs.com',
+        'status': 'Active',
+        'source': '-',
+        'dateStarted': '2012',
+        'category': 'Education'
+    },
+    {
+        'name': 'Raunk',
+        'description': 'Rate everything and make lists',
+        'link': 'http://raunk.com',
+        'status': 'Not Active',
+        'source': '-',
+        'dateStarted': '2011',
+    },
+    {
+        'name': 'thekeesh.com',
+        'description': 'Jeremy\'s personal blog',
+        'link': 'http://thekeesh.com',
+        'status': 'Active',
+        'source': '-',
+        'dateStarted': '2004',
+        'category': 'Personal',
+    },
+    {
+        'name': 'jeremykeeshin.com',
+        'description': 'Jeremy\'s personal website',
+        'link': 'http://jeremykeeshin.com',
+        'status': 'Active',
+        'source': '-',
+        'dateStarted': '?',
+        'category': 'Personal',
+    },
+    {
+        'name': 'Facebook Edgerank Bookmarklet',
+        'description': 'Bookmarklet for Facebook to show who Facebook thinks your closest friends are',
+        'link': 'http://thekeesh.com/2011/08/who-does-facebook-think-you-are-searching-for/',
+        'status': 'Not Active',
+        'source': 'https://github.com/jkeesh/fb-friends-bookmarklet',
+        'dateStarted': '2011',
+    },
+    {
+        'name': 'TSLA Bot',
+        'description': 'Twitter bot to tweet TSLA stock quotes',
+        'link': 'https://twitter.com/tsla_bot',
+        'status': 'Active',
+        'source': 'https://github.com/jkeesh/tsla_bot',
+        'dateStarted': '2015',
+        'category': 'Twitter Bot',
+    },
+    {
+        'name': 'SPY Bot',
+        'description': 'Twitter bot to tweet SPY stock quotes',
+        'link': 'https://twitter.com/spy_bot_',
+        'status': 'Active',
+        'source': 'https://github.com/jkeesh/spy_bot',
+        'dateStarted': '2015',
+        'category': 'Twitter Bot',
+    },
+    {
+        'name': 'Press Freedom Adventure Game',
+        'description': 'An interactive text based adventure game about press freedom for a CS181 (Computer Ethics) project.',
+        'link': 'http://thekeesh.com/cs181/',
+        'status': 'Active',
+        'source': 'https://github.com/jkeesh/adventure',
+        'dateStarted': '2011',
+        'category': 'School Projects',
+    },
+    {
+        'name': 'Project Status Site',
+        'description': 'A site to list descriptions, source code, and statuses for my projects',
+        'link': 'x',
+        'status': 'Active',
+        'source': 'x',
+        'dateStarted': '2015',
+        'category': 'Personal',
+    }
+];
+
+
+
+</script>
+  </head>
+  <body>
+
 <h1>Jeremy's Projects</h1>
 
-<table>
+
+<table class="table table-striped">
 
 <tr>
-    <th>Name</th>
-    <th>Description</th>
+    <th class="name-col">Name</th>
+    <th class="desc-col">Description</th>
     <th>Link</th>
     <th>Status</th>
     <th>Source</th>
@@ -12,199 +131,45 @@
     <th>Category</th>
 </tr>
 
-<tr>
-    <td>CodeHS</td>
-    <td>Site for teaching coding to high schools.</td>
-    <td><a href="http://codehs.com">http://codehs.com</a></td>
-    <td>Active</td>
-    <td> - </td>
-    <td>2012</td>
-    <td>Education</td>
-</tr>
+<script type="text/html" id="row_tmpl">
+  <% for ( var i = 0; i < PROJECTS.length; i++ ) { %>
+    <tr>
+        <td><%= PROJECTS[i].name %></td>
+        <td><%= PROJECTS[i].description %></td>
+        <td>
+            <a target="_blank" href="<%= PROJECTS[i].link %>">
+                Link
+            </a>
+        </td>
+        <td class="<%= 5 %>">
+            <%= PROJECTS[i].status %>
+        </td>
+        <td>
+            <a target="_blank" href="<%= PROJECTS[i].source %>">
+                <%= (PROJECTS[i].source.length > 1 ? "source" : "") %>
+            </a>
+        </td>
+        <td><%= PROJECTS[i].dateStarted %></td>
+        <td><%= PROJECTS[i].category %></td>
+    </tr>
+  <% } %>
+</script>
 
-<tr>
-    <td>Raunk</td>
-    <td>Rate everything and make lists</td>
-    <td><a href="http://raunk.com">http://raunk.com</a></td>
-    <td>Not Active</td>
-    <td> - </td>
-    <td>2011</td>
-</tr>
-
-<tr>
-    <td>thekeesh.com</td>
-    <td>Jeremy's personal blog</td>
-    <td><a href="http://thekeesh.com">http://thekeesh.com</a></td>
-    <td>Active</td>
-    <td> - </td>
-    <td>20??</td>
-    <td>Personal</td>
-</tr>
-
-<tr>
-    <td>jeremykeeshin.com</td>
-    <td>Jeremy's personal website</td>
-    <td><a href="http://jeremykeeshin.com">http://jeremykeeshin.com</a></td>
-    <td>Active</td>
-    <td> - </td>
-    <td>20??</td>
-    <td>Personal</td>
-</tr>
-
-<tr>
-    <td>Facebook Edgerank Bookmarklet</td>
-    <td>Bookmarklet for Facebook to show who Facebook thinks your closest friends are</td>
-    <td><a href="http://jeremykeeshin.com">http://jeremykeeshin.com</a></td>
-    <td>Not Active</td>
-    <td> - </td>
-    <td>2010</td>
-</tr>
-
-<tr>
-    <td>TSLA Bot</td>
-    <td>Twitter bot to tweet TSLA stock quotes</td>
-    <td><a href="http://jeremykeeshin.com">http://jeremykeeshin.com</a></td>
-    <td>Active</td>
-    <td> - </td>
-    <td>2015</td>
-    <td>Twitter Bot</td>
-</tr>
-
-<tr>
-    <td>SPY Bot</td>
-    <td>Twitter bot to tweet SPY stock quotes</td>
-    <td><a href="http://jeremykeeshin.com">http://jeremykeeshin.com</a></td>
-    <td>Active</td>
-    <td> - </td>
-    <td>2015</td>
-    <td>Twitter Bot</td>
-</tr>
-
-<tr>
-    <td>Press Freedom Adventure Game</td>
-    <td>An interactive text based adventure game about press freedom for a CS181 (Computer Ethics) project.</td>
-    <td><a href="http://jeremykeeshin.com">http://jeremykeeshin.com</a></td>
-    <td>Active</td>
-    <td> - </td>
-    <td>2011</td>
-    <td>School Project</td>
-</tr>
-
-<tr>
-    <td>Project Status Site</td>
-    <td>A site to list descriptions, source code, and statuses for my projects</td>
-    <td><a href="http://jeremykeeshin.com">http://jeremykeeshin.com</a></td>
-    <td>Active</td>
-    <td> - </td>
-    <td>2015</td>
-</tr>
-
-<tr>
-    <td>Mission Dinners</td>
-    <td>A site to collect dinner party themes</td>
-    <td><a href="http://missiondinners.com">http://missiondinners.com</a></td>
-    <td>Active</td>
-    <td> - </td>
-    <td>2013</td>
-    <td>Personal</td>
-</tr>
-
-<tr>
-    <td>Mission Book Club</td>
-    <td>A site to list our book club reading list</td>
-    <td><a href="http://missionbookclub.com">http://missionbookclub.com</a></td>
-    <td>Active</td>
-    <td> - </td>
-    <td>2013</td>
-    <td>Personal</td>
-</tr>
-
-<tr>
-    <td>Realtime Listserve Map</td>
-    <td>A realtime map showing the location of visitors to the site, for the Listserve</td>
-    <td><a href="http://missionbookclub.com">http://missionbookclub.com</a></td>
-    <td>Active</td>
-    <td> - </td>
-    <td>2015</td>
-</tr>
-
-<tr>
-    <td>Bitcoin Shovels</td>
-    <td>A landing page joke site for bitcoin, selling shovels</td>
-    <td><a href="http://missionbookclub.com">http://missionbookclub.com</a></td>
-    <td>Not Active</td>
-    <td> - </td>
-    <td>2015</td>
-    <td>Comedy</td>
-</tr>
-
-<tr>
-    <td>Stanford Flipside</td>
-    <td>Satirical newspaper for Stanford University in the style of The Onion.</td>
-    <td><a href="http://stanfordflipside.com">http://stanfordflipside.com</a></td>
-    <td>Active</td>
-    <td> - </td>
-    <td>2008</td>
-    <td>Flipside</td>
-</tr>
-
-<tr>
-    <td>DHS Flipside</td>
-    <td>Satirical newspaper for Deerfield High School in the style of The Onion.</td>
-    <td><a href="http://stanfordflipside.com">http://stanfordflipside.com</a></td>
-    <td>Active</td>
-    <td> - </td>
-    <td>2008</td>
-    <td>Flipside</td>
-</tr>
-
-<tr>
-    <td>Flipside News</td>
-    <td>Informational site for the Flipside satirical newspapers</td>
-    <td><a href="http://flipsidenews.com">http://flipsidenews.com</a></td>
-    <td>Active</td>
-    <td> - </td>
-    <td>2008</td>
-    <td>Flipside</td>
-</tr>
-
-<tr>
-    <td>Flipside Convention</td>
-    <td>Informational site for the Flipside 10 year convention</td>
-    <td><a href="http://flipsideconvention.com">http://flipsideconvention.com</a></td>
-    <td>Active</td>
-    <td> - </td>
-    <td>2015</td>
-    <td>Flipside</td>
-</tr>
-
-<tr>
-    <td>SCPD Scraper</td>
-    <td>Tool to scrape lecture videos for SCPD sites.</td>
-    <td><a href="http://flipsideconvention.com">http://flipsideconvention.com</a></td>
-    <td>Active</td>
-    <td> - </td>
-    <td>2015</td>
-</tr>
-
-<tr>
-    <td>Citation Missing</td>
-    <td>Project for comedy hackathon to easily edit wikipedia pages</td>
-    <td><a href="http://flipsideconvention.com">http://flipsideconvention.com</a></td>
-    <td>Active</td>
-    <td> - </td>
-    <td>2015</td>
-    <td>Comedy</td>
-</tr>
-
-<tr>
-    <td>YouTube Sloth</td>
-    <td>Take any youtube video and slow it down, simulating viewing it on a slow network</td>
-    <td><a href="http://flipsideconvention.com">http://flipsideconvention.com</a></td>
-    <td>Active</td>
-    <td> - </td>
-    <td>2015</td>
-    <td>Comedy</td>
-</tr>
 
 </table>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/templ.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <script>
+        var x = tmpl("row_tmpl", {});
+        $("tbody").append(x);
+        console.log(x);
+    </script>
+  </body>
+</html>
+
