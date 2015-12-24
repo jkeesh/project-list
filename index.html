@@ -27,504 +27,78 @@
 
     </style>
 
-    <script>
-var PROJECTS = [
-    {
-        'name': 'CodeHS',
-        'description': 'Site for teaching coding to high schools.',
-        'link': 'http://codehs.com',
-        'status': 'Active',
-        'dateStarted': '2012',
-        'category': 'Education'
-    },
-    {
-        'name': 'Raunk',
-        'description': 'Rate everything and make lists',
-        'link': 'http://raunk.com',
-        'status': 'Not Active',
-        'dateStarted': '2011',
-        'category': 'Lists',
-    },
-    {
-        'name': 'thekeesh.com',
-        'description': 'Jeremy\'s personal blog',
-        'link': 'http://thekeesh.com',
-        'status': 'Active',
-        'dateStarted': '2004',
-        'category': 'Personal',
-    },
-    {
-        'name': 'jeremykeeshin.com',
-        'description': 'Jeremy\'s personal website',
-        'link': 'http://jeremykeeshin.com',
-        'status': 'Active',
-        'dateStarted': '2009',
-        'category': 'Personal',
-    },
-    {
-        'name': 'Facebook Edgerank Bookmarklet',
-        'description': 'Bookmarklet for Facebook to show who Facebook thinks your closest friends are',
-        'link': 'http://thekeesh.com/2011/08/who-does-facebook-think-you-are-searching-for/',
-        'status': 'Not Active',
-        'source': 'https://github.com/jkeesh/fb-friends-bookmarklet',
-        'dateStarted': '2011',
-        'category': 'Tool',
-    },
-    {
-        'name': 'TSLA Bot',
-        'description': 'Twitter bot to tweet TSLA stock quotes',
-        'link': 'https://twitter.com/tsla_bot',
-        'status': 'Active',
-        'source': 'https://github.com/jkeesh/tsla_bot',
-        'dateStarted': '2015',
-        'category': 'Twitter Bot',
-    },
-    {
-        'name': 'SPY Bot',
-        'description': 'Twitter bot to tweet SPY stock quotes',
-        'link': 'https://twitter.com/spy_bot_',
-        'status': 'Active',
-        'source': 'https://github.com/jkeesh/spy_bot',
-        'dateStarted': '2015',
-        'category': 'Twitter Bot',
-    },
-    {
-        'name': 'Press Freedom Adventure Game',
-        'description': 'An interactive text based adventure game about press freedom for a CS181 (Computer Ethics) project.',
-        'link': 'http://thekeesh.com/cs181/',
-        'status': 'Active',
-        'source': 'https://github.com/jkeesh/adventure',
-        'dateStarted': '2011',
-        'category': 'School Projects',
-    },
-    {
-        'name': 'Project Status Site',
-        'description': 'A site to list descriptions, source code, and statuses for my projects',
-        'link': 'http://thekeesh.com/projectlist/',
-        'status': 'Active',
-        'source': 'https://github.com/jkeesh/project-list',
-        'dateStarted': '2015',
-        'category': 'Personal',
-    },
-    {
-        'name': 'Mission Dinners',
-        'description': 'A site to collect dinner party themes I\'ve hosted',
-        'link': 'http://missiondinners.com',
-        'status': 'Active',
-        'dateStarted': '2013',
-        'category': 'Personal',
-    },
-    {
-        'name': 'Mission Book Club',
-        'description': 'A site to list our book club reading list',
-        'link': 'http://missionbookclub.com',
-        'status': 'Active',
-        'dateStarted': '2013',
-        'category': 'Personal',
-    },
-    {
-        'name': 'Realtime Listserve Map',
-        'description': 'A realtime map showing the location of visitors to the site, for the Listserve',
-        'link': 'https://listserve.firebaseapp.com/',
-        'source': 'https://github.com/jkeesh/listserve',
-        'status': 'Active',
-        'dateStarted': '2015',
-        'category': 'Personal',
-    },
-    {
-        'name': 'Bitcoin Shovels',
-        'description': 'A landing page joke site for bitcoin, selling shovels (previously at bitcoinshovels.com',
-        'link': 'http://thekeesh.com/bitcoinshovels/',
-        'status': 'Not Active',
-        'dateStarted': '2014',
-        'category': 'Comedy',
-        'source': 'https://github.com/jkeesh/bitcoin-shovels',
-    },
-    {
-        'name': 'Stanford Flipside',
-        'description': 'Satirical newspaper for Stanford University in the style of The Onion.',
-        'link': 'http://stanfordflipside.com',
-        'status': 'Active',
-        'dateStarted': '2008',
-        'category': 'Flipside',
-    },
-    {
-        'name': 'DHS Flipside',
-        'description': 'Satirical newspaper for Deerfield High School in the style of The Onion.',
-        'link': 'http://dhsflipside.com',
-        'status': 'Active',
-        'dateStarted': '2005',
-        'category': 'Flipside',
-    },
-    {
-        'name': 'Flipside News',
-        'description': 'Informational site for the Flipside satirical newspapers',
-        'link': 'http://flipsidenews.com',
-        'status': 'Active',
-        'dateStarted': '2008',
-        'category': 'Flipside',
-    },
-    {
-        'name': 'Flipside Convention',
-        'description': 'Informational site for the Flipside 10 year convention',
-        'link': 'http://flipideconvention.com',
-        'status': 'Active',
-        'dateStarted': '2015',
-        'category': 'Flipside',
-    },
-    {
-        'name': 'SCPD Scraper',
-        'description': 'Tool to scrape lecture videos for SCPD',
-        'link': 'https://github.com/jkeesh/scpd-scraper',
-        'status': 'Not Active',
-        'dateStarted': '2011',
-        'source': 'https://github.com/jkeesh/scpd-scraper',
-        'category': 'Stanford',
-    },
-    {
-        'name': 'Citation Missing',
-        'description': 'Project for comedy hackathon to easily edit wikipedia pages',
-        'link': 'x',
-        'status': 'Not Active',
-        'source': 'https://github.com/jkeesh/citation-missing',
-        'category': 'Comedy',
-        'dateStarted': '2013'
-    },
-    {
-        'name': 'YouTube Sloth',
-        'description': 'Take any youtube video and slow it down, simulating viewing it on a slow network',
-        'status': 'Not Active',
-        'link': 'http://thekeesh.com/ytsloth',
-        'category': 'Comedy',
-        'dateStarted': '2010',
-    },
-    {
-        'name': 'Your Money or Your Life Crossover Visualization',
-        'description': 'Interactive visualization of investment income crossover point using Your Money or Your Life',
-        'link': 'http://thekeesh.com/ymoyl',
-        'source': 'https://github.com/jkeesh/crossover',
-        'dateStarted': '2015',
-        'category': 'Finance',
-        'status': 'Active',
-    },
-    {
-        'name': 'Jumble Maker',
-        'description': 'A tool to help create jumbles for the Flipside',
-        'link': 'http://thekeesh.com/jumblemaker/',
-        'source': 'https://github.com/jkeesh/JumbleMaker',
-        'status': 'Active',
-        'category': 'Flipside',
-        'dateStarted': '2012',
-    },
-    {
-        'name': 'Where is the 1%?',
-        'description': 'A map visualizing median incomes across the US using D3',
-        'link': 'http://thekeesh.com/onepercent/',
-        'status': 'Active',
-        'source': 'https://github.com/jkeesh/onepercent',
-        'category': 'School Projects',
-        'dateStarted': '2011',
-    },
-    {
-        'name': 'Jitterbunk',
-        'description': 'A site where you can bunk your friends',
-        'link': 'http://jitterbunk.com',
-        'status': 'Not Active',
-        'source': 'https://github.com/jkeesh/jitterbunk',
-        'category': 'Comedy',
-        'dateStarted': '2011'
-    },
-    {
-        'name': 'Cryptogram Maker',
-        'description': 'Let you easily make cryptograms',
-        'source': 'https://github.com/jkeesh/CryptogramMaker',
-        'link': 'http://thekeesh.com/cryptogram/',
-        'status': 'Active',
-        'category': 'Flipside',
-        'dateStarted': '2012',
-    },
-    {
-        'name': 'Paperless',
-        'description': 'A code commenting and review project for the Stanford CS106 program',
-        'source': 'https://github.com/jkeesh/paperless',
-        'link': 'http://paperless.stanford.edu/',
-        'status': 'Active',
-        'dateStarted': '2010',
-        'category': 'Stanford',
-    },
-    {
-        'name': 'Study Guide Generator',
-        'description': 'Enter a list of words and get definitions from Wikipedia',
-        'source': 'x',
-        'link': 'http://thekeesh.com/study/',
-        'status': 'Active',
-        'dateStarted': '2011',
-        'category': 'Small App',
-    },
-    {
-        'name': 'Mission Tacos',
-        'description': 'Let you see and rate all of the taco places in the Mission in San Francisco',
-        'source': 'https://github.com/jkeesh/mission-tacos',
-        'link': 'http://missiontacos.com',
-        'status': 'Not Active',
-        'dateStarted': '2013',
-        'category': 'Small App',
-    },
-    {
-        'name': 'Visualize Friends',
-        'description': 'Tool to let you see changes in your Facebook friends',
-        'source': 'http://github.com/jkeesh/friends',
-        'link': 'x',
-        'status': 'Not Active',
-        'dateStarted': '2013',
-        'category': 'Small App',
-    },
-    {
-        'name': 'Popular Site Template',
-        'description': 'Lets you make your own popular sites a la FMyLife and MyLifeIsAverage',
-        'source': 'https://github.com/jkeesh/popularsitetemplate',
-        'link': 'x',
-        'status': 'Not Active',
-        'dateStarted': '2010',
-        'category': 'Small App',
-    },
-    {
-        'name': 'Best to Top',
-        'description': 'A tool for brainstorming',
-        'source': 'https://github.com/jkeesh/besttotop',
-        'link': 'http://besttotop.appspot.com/',
-        'status': 'Not Active',
-        'dateStarted': '2011',
-        'category': 'Small App',
-    },
-    {
-        'name': 'Biology Project',
-        'description': 'Ecosystem project for sophomore in high school biology class',
-        'source': 'x',
-        'link': 'http://thekeesh.com/biofinal/',
-        'status': 'Active',
-        'dateStarted': '2005',
-        'category': 'School Project',
-    },
-    {
-        'name': 'Paperless 2',
-        'description': 'Feedback tool for Stanford CS107, lightweight text-based tool inspired by paperless',
-        'source': 'https://github.com/jkeesh/paperless2',
-        'link': '#',
-        'status': 'Not Active',
-        'dateStarted': '2012',
-        'category': 'Stanford',
-    },
-    {
-        'name': 'Mutual Friends',
-        'description': 'Discover who you have the most mutual friends with on Facebook',
-        'source': 'https://github.com/jkeesh/mutual-friends',
-        'link': '#',
-        'status': 'Not Active',
-        'dateStarted': '2012',
-        'category': 'Tool',
-    },
-    {
-        'name': 'QuestionHut',
-        'description': 'Open source question and answer tool for classes',
-        'source': 'https://github.com/jkeesh/QuestionHut',
-        'link': 'http://questionhut.com',
-        'status': 'Not Active',
-        'dateStarted': '2011',
-        'category': 'Stanford',
-    },
-    {
-        'name': 'Contacts',
-        'description': 'Tool to manage contacts',
-        'source': 'https://github.com/jkeesh/contacts',
-        'link': '#',
-        'status': 'Not Active',
-        'dateStarted': '2012',
-        'category': 'Small App',
-    },
-    {
-        'name': 'Jeremy\'s List',
-        'description': 'Site to post open apartments and jobs a la craigslist, but for people who know Jeremy',
-        'source': 'x',
-        'link': 'http://jeremyslist.com',
-        'status': 'Not Active',
-        'dateStarted': '2014',
-        'category': 'Small App',
-    },
-    {
-        'name': 'Facebook Status Gender Classifier and Generator',
-        'description': 'Machine learning algorithm tries to guess if the facebook status you type is from a guy or girl',
-        'link': 'http://thekeesh.com/cs224n',
-        'source': 'x',
-        'category': 'School Project',
-        'status': 'Active',
-        'dateStarted': '2011',
-    },
-    {
-        'name': 'Type Shift Code',
-        'description': 'Shift your hands over one key right and encode and decode messages',
-        'link': 'http://thekeesh.com/typeshift/',
-        'source': 'x',
-        'status': 'Active',
-        'dateStarted': '2011',
-        'category': 'Tool',
-    },
-    {
-        'name': 'Lovescore with Bump',
-        'description': 'Find out how compatible you are with your friends! Just bump your friends to find out your lovescore!',
-        'link': 'http://itunes.apple.com/gb/app/lovescore-with-bump/id363350712?mt=8',
-        'status': 'Not Active',
-        'dateStarted': '2010',
-        'category': 'iPhone Apps',
-    },
-    {
-        'name': 'Stanford Flipside for iPhone',
-        'description': 'iPhone app to read the Stanford Flipside',
-        'link': 'http://itunes.apple.com/us/app/the-stanford-flipside/id362038270?mt=8',
-        'status': 'Not Active',
-        'dateStarted': '2010',
-        'category': 'iPhone Apps',
-    },
-    {
-        'name': 'Northwestern Flipside for iPhone',
-        'description': 'iPhone app to read the Northwestern Flipside',
-        'link': 'http://itunes.apple.com/us/app/the-northwestern-flipside/id392581634?mt=8',
-        'status': 'Not Active',
-        'dateStarted': '2010',
-        'category': 'iPhone Apps',
-    },
-    {
-        'name': 'DHS Flipside Flipside for iPhone',
-        'description': 'iPhone app to read the DHS Flipside',
-        'link': 'http://itunes.apple.com/us/app/the-dhs-flipside/id392228545?mt=8',
-        'status': 'Not Active',
-        'dateStarted': '2010',
-        'category': 'iPhone Apps',
-    },
-    {
-        'name': 'FormulaHelp',
-        'description': 'FormulaHelp allows you to solve the quadratic equation, distance formula, and find the area and volume of many 2D and 3D objects.',
-        'link': 'http://itunes.apple.com/us/app/formulahelp/id354916594?mt=8',
-        'status': 'Active',
-        'dateStarted': '2010',
-        'category': 'iPhone Apps',
-    },
-    {
-        'name': 'ColorSearch',
-        'description': 'iPhone app to choose a simple rgb color',
-        'link': 'https://itunes.apple.com/us/app/colorsearch/id349852837?mt=8',
-        'status': 'Active',
-        'dateStarted': '2010',
-        'category': 'iPhone Apps',
-    },
-    {
-        'name': 'Social Norms on the Web: How To Create Productive Digital Communities',
-        'description': '',
-        'link': 'http://thekeesh.com/docs/norms.pdf',
-        'dateStarted': '2012',
-        'category': 'Papers',
-        'status': 'Active',
-    },
-    {
-        'name': 'Machine Learning and Feature Based Approaches to Gender Classification of Facebook Statuses',
-        'description': '',
-        'dateStarted': '2010',
-        'category': 'Papers',
-        'link': 'http://thekeesh.com/cs224n/final_writeup.pdf',
-        'status': 'Active',
-    },
-    {
-        'name': 'Read Very Carefully: An Examination of the Role of Satirical News In Promoting Media Literacy and Encouraging Engagement with Current Events',
-        'description': '',
-        'dateStarted': '2009',
-        'link': 'http://www.thekeesh.com/docs/pwrfinal.pdf',
-        'category': 'Papers',
-        'status': 'Active',
-    },
-    {
-        'name': 'Computer Vision: Identification of Mugs, Clocks, Staplers and Scissors',
-        'description': '',
-        'dateStarted': '2009',
-        'link': 'http://thekeesh.com/docs/vision.pdf',
-        'category': 'Papers',
-        'status': 'Active',
-    },
-    {
-        'name': 'Coastal Partners Website',
-        'description': 'Business website for coastal partners (since redesigned)',
-        'link': 'http://coastalpartners.net',
-        'category': '',
-        'status': 'Not Active',
-        'dateStarted': '2009',
-        'category': 'Business Website',
-    },
-    {
-        'name': 'Java Blackjack',
-        'description': 'Blackjack game from high school computer science class',
-        'link': '',
-        'status': 'Not Active',
-        'dateStarted': '2008',
-        'category': 'School Project'
-    },
-    {
-        'name': 'Java Guessing Game',
-        'description': 'Guessing game game from high school computer science class',
-        'link': '',
-        'status': 'Not Active',
-        'dateStarted': '2007',
-        'category': 'School Project'
-    },
-
-];
-
-
-
-</script>
+    <script src="data.js"></script>
   </head>
   <body>
 
-<h1>Jeremy's Projects</h1>
 
 
-<table class="table table-striped">
+    <!-- Page Content -->
+    <div class="container">
+        <div id="maincontent">
 
-<tr>
-    <th>#</th>
-    <th class="name-col">Name</th>
-    <th class="desc-col">Description</th>
-    <th>Status</th>
-    <th>Source</th>
-    <th>Date Started</th>
-    <th>Category</th>
-</tr>
-
-<script type="text/html" id="row_tmpl">
-  <% for ( var i = 0; i < PROJECTS.length; i++ ) { %>
-    <tr>
-        <td><%= i %></td>
-        <td>
-            <a target="_blank" href="<%= PROJECTS[i].link %>">
-                <%= PROJECTS[i].name %>
-            </a>
-        </td>
-        <td><%= PROJECTS[i].description %></td>
-
-        <td class="<%= 5 %>">
-            <%= PROJECTS[i].status %>
-        </td>
-        <td>
-            <a target="_blank" href="<%= PROJECTS[i].source %>">
-                <%= (PROJECTS[i].source != null ? "source" : "") %>
-            </a>
-        </td>
-        <td><%= PROJECTS[i].dateStarted %></td>
-        <td><%= PROJECTS[i].category %></td>
-    </tr>
-  <% } %>
-</script>
+            <!-- Page Heading -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">Jeremy Keeshin's Projects
+                        <small><a target="_blank" href="./table.html">View Table</a></small>
+                    </h1>
+                </div>
+            </div>
+            <!-- /.row -->
 
 
-</table>
+
+
+            <script type="text/html" id="row_tmpl">
+              <% for ( var i = 0; i < PROJECTS.length; i++ ) { %>
+                <div class="row">
+                    <div class="col-md-7">
+                        <!-- Image -->
+                        <a href="#">
+                            <img class="img-responsive" src="http://placehold.it/700x300" alt="">
+                        </a>
+                    </div>
+                    <div class="col-md-5">
+                        <!-- Title -->
+                        <h3>
+                            <a target="_blank" href="<%= PROJECTS[i].link %>">
+                                <%= PROJECTS[i].name %>
+                            </a>
+                        </h3>
+
+                        <!-- Subheading -->
+                        <h4>
+                            <%= PROJECTS[i].category %> //
+                            <%= PROJECTS[i].dateStarted %>
+                        </h4>
+
+                        <!-- Description -->
+                        <p>
+                            <%= PROJECTS[i].description %>
+                            (<%= PROJECTS[i].status %>)
+                            <a target="_blank" href="<%= PROJECTS[i].source %>">
+                                <%= (PROJECTS[i].source != null ? "(source)" : "") %>
+                            </a>
+                        </p>
+
+                        <!-- Button -->
+                        <a class="btn btn-primary" target="_blank" href="<%= PROJECTS[i].link %>">
+                            View Project <span class="glyphicon glyphicon-chevron-right"></span>
+                        </a>
+                    </div>
+                </div>
+                <!-- ./row -->
+
+                <hr>
+
+              <% } %>
+            </script>
+
+        </div> <!-- ./maincontent -->
+    </div><!-- ./container -->
+
+
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="js/jquery.min.js"></script>
@@ -539,7 +113,7 @@ var PROJECTS = [
 
     <script>
         var x = tmpl("row_tmpl", {});
-        $("tbody").append(x);
+        $("#maincontent").append(x);
         console.log(x);
     </script>
   </body>

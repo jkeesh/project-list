@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Jeremy's Projects</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <style>
+        .name-col{
+            width: 20%;
+        }
+        .desc-col{
+            width: 30%;
+        }
+
+    </style>
+
+    <script src="data.js"></script>
+  </head>
+  <body>
+
+<h1>Jeremy's Projects</h1>
+
+
+<table class="table table-striped">
+
+<tr>
+    <th>#</th>
+    <th class="name-col">Name</th>
+    <th class="desc-col">Description</th>
+    <th>Status</th>
+    <th>Source</th>
+    <th>Date Started</th>
+    <th>Category</th>
+</tr>
+
+<script type="text/html" id="row_tmpl">
+  <% for ( var i = 0; i < PROJECTS.length; i++ ) { %>
+    <tr>
+        <td><%= i %></td>
+        <td>
+            <a target="_blank" href="<%= PROJECTS[i].link %>">
+                <%= PROJECTS[i].name %>
+            </a>
+        </td>
+        <td><%= PROJECTS[i].description %></td>
+
+        <td class="<%= 5 %>">
+            <%= PROJECTS[i].status %>
+        </td>
+        <td>
+            <a target="_blank" href="<%= PROJECTS[i].source %>">
+                <%= (PROJECTS[i].source != null ? "source" : "") %>
+            </a>
+        </td>
+        <td><%= PROJECTS[i].dateStarted %></td>
+        <td><%= PROJECTS[i].category %></td>
+    </tr>
+  <% } %>
+</script>
+
+
+</table>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/templ.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/install.js"></script>
+    <script src="js/sortable.js"></script>
+    <link rel="stylesheet" href="css/sortable-theme-minimal.css" />
+
+    <script>
+        var x = tmpl("row_tmpl", {});
+        $("tbody").append(x);
+        console.log(x);
+    </script>
+  </body>
+</html>
+
