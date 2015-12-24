@@ -34,7 +34,6 @@ var PROJECTS = [
         'description': 'Site for teaching coding to high schools.',
         'link': 'http://codehs.com',
         'status': 'Active',
-        'source': '-',
         'dateStarted': '2012',
         'category': 'Education'
     },
@@ -43,7 +42,6 @@ var PROJECTS = [
         'description': 'Rate everything and make lists',
         'link': 'http://raunk.com',
         'status': 'Not Active',
-        'source': '-',
         'dateStarted': '2011',
     },
     {
@@ -51,7 +49,6 @@ var PROJECTS = [
         'description': 'Jeremy\'s personal blog',
         'link': 'http://thekeesh.com',
         'status': 'Active',
-        'source': '-',
         'dateStarted': '2004',
         'category': 'Personal',
     },
@@ -60,7 +57,6 @@ var PROJECTS = [
         'description': 'Jeremy\'s personal website',
         'link': 'http://jeremykeeshin.com',
         'status': 'Active',
-        'source': '-',
         'dateStarted': '?',
         'category': 'Personal',
     },
@@ -102,12 +98,43 @@ var PROJECTS = [
     {
         'name': 'Project Status Site',
         'description': 'A site to list descriptions, source code, and statuses for my projects',
-        'link': 'x',
+        'link': 'http://thekeesh.com/projectlist/',
         'status': 'Active',
-        'source': 'x',
+        'source': 'https://github.com/jkeesh/project-list',
         'dateStarted': '2015',
         'category': 'Personal',
-    }
+    },
+    {
+        'name': 'Mission Dinners',
+        'description': 'A site to collect dinner party themes I\'ve hosted',
+        'link': 'http://missiondinners.com',
+        'status': 'Active',
+        'dateStarted': '2013',
+        'category': 'Personal',
+    },
+    {
+        'name': 'Mission Book Club',
+        'description': 'A site to list our book club reading list',
+        'link': 'http://missionbookclub.com',
+        'status': 'Active',
+        'dateStarted': '2013',
+        'category': 'Personal',
+    },
+    {
+        'name': 'Realtime Listserve Map',
+        'description': 'A realtime map showing the location of visitors to the site, for the Listserve',
+        'link': 'https://listserve.firebaseapp.com/',
+        'source': 'https://github.com/jkeesh/listserve',
+        'status': 'Active',
+        'dateStarted': '2015',
+        'category': 'Personal',
+    },
+    // {
+    //     'name': 'Bitcoin Shovels',
+    //     'description': 'A landing page joke site for bitcoin, selling shovels',
+    //     ''
+    // }
+
 ];
 
 
@@ -146,7 +173,7 @@ var PROJECTS = [
         </td>
         <td>
             <a target="_blank" href="<%= PROJECTS[i].source %>">
-                <%= (PROJECTS[i].source.length > 1 ? "source" : "") %>
+                <%= (PROJECTS[i].source != null ? "source" : "") %>
             </a>
         </td>
         <td><%= PROJECTS[i].dateStarted %></td>
