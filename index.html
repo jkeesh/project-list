@@ -56,7 +56,7 @@
                     <div class="col-md-7">
                         <!-- Image -->
                         <a href="#">
-                            <img class="img-responsive" src="http://placehold.it/700x300" alt="">
+                            <img class="img-responsive project-image" src="<%= get_image(PROJECTS[i]) %>" alt="">
                         </a>
                     </div>
                     <div class="col-md-5">
@@ -115,7 +115,20 @@
         var x = tmpl("row_tmpl", {});
         $("#maincontent").append(x);
         console.log(x);
+
+        function get_image(cur){
+            if(cur.image){
+                return "./images/" + cur.image;
+            }
+            return "http://placehold.it/700x300";
+        }
     </script>
+
+    <style>
+    .project-image{
+        width: 700px;
+    }
+    </style>
   </body>
 </html>
 

@@ -5,7 +5,8 @@ var PROJECTS = [
         'link': 'http://codehs.com',
         'status': 'Active',
         'dateStarted': '2012',
-        'category': 'Education'
+        'category': 'Education',
+        'image': 'codehs.png',
     },
     {
         'name': 'Raunk',
@@ -14,6 +15,7 @@ var PROJECTS = [
         'status': 'Not Active',
         'dateStarted': '2011',
         'category': 'Lists',
+        'image': 'raunk.png',
     },
     {
         'name': 'thekeesh.com',
@@ -22,6 +24,7 @@ var PROJECTS = [
         'status': 'Active',
         'dateStarted': '2004',
         'category': 'Personal',
+        'image': 'thekeesh.png',
     },
     {
         'name': 'jeremykeeshin.com',
@@ -30,6 +33,7 @@ var PROJECTS = [
         'status': 'Active',
         'dateStarted': '2009',
         'category': 'Personal',
+        'image': 'jeremykeeshin.png',
     },
     {
         'name': 'Facebook Edgerank Bookmarklet',
@@ -39,6 +43,7 @@ var PROJECTS = [
         'source': 'https://github.com/jkeesh/fb-friends-bookmarklet',
         'dateStarted': '2011',
         'category': 'Tool',
+        'image': 'fb.png',
     },
     {
         'name': 'TSLA Bot',
@@ -48,6 +53,7 @@ var PROJECTS = [
         'source': 'https://github.com/jkeesh/tsla_bot',
         'dateStarted': '2015',
         'category': 'Twitter Bot',
+        'image': 'twitter.jpg',
     },
     {
         'name': 'SPY Bot',
@@ -57,6 +63,7 @@ var PROJECTS = [
         'source': 'https://github.com/jkeesh/spy_bot',
         'dateStarted': '2015',
         'category': 'Twitter Bot',
+        'image': 'twitter.jpg',
     },
     {
         'name': 'Press Freedom Adventure Game',
@@ -66,6 +73,7 @@ var PROJECTS = [
         'source': 'https://github.com/jkeesh/adventure',
         'dateStarted': '2011',
         'category': 'School Projects',
+        'image': 'adventure.png',
     },
     {
         'name': 'Project Status Site',
