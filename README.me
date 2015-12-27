@@ -2,20 +2,12 @@ Listing of all my projects in a table format for easier tracking.
 
 [See a demo http://thekeesh.com/projectlist/] (http://thekeesh.com/projectlist/)
 
-Ideas TODO:
-* allow sorting with JS
-* have projects create a project.json file that makes it possible to generate this file
+How to add a project:
 
-```
-project.json
-####
-{
-    "name": "Realtime Listserve",
-    "description": "....",
-    "date": 2015,
-    "link": "http:/...",
-    "source": "....",
-    "is_active": true,
-    "category": "xyz",
-    "tags": "a, b, c"
-}
+1. Open data.js file and add a json with the required fields.
+2. Make sure to add a title, description.
+3. To add an image, make sure it is wider than tall, approx 700x300px and add
+it to the images/ folder. 
+4. Commit and deploy with
+
+git push origin master; git push web master
