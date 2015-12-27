@@ -415,6 +415,15 @@ var PROJECTS = [
         'image': 'dhs_flipside_iphone.png',
     },
     {
+        'name': 'Joy Horwich Gallery + 2',
+        'description': 'Site for my mom, aunt and nana\'s art business',
+        'link': 'http://www.joyhorwichgallery2.com/',
+        'status': 'Active',
+        'dateStarted': '2015',
+        'category': 'Business',
+        'image': 'jhg.png',
+    },
+    {
         'name': 'FormulaHelp',
         'description': 'FormulaHelp allows you to solve the quadratic equation, distance formula, and find the area and volume of many 2D and 3D objects.',
         'link': 'http://itunes.apple.com/us/app/formulahelp/id354916594?mt=8',
