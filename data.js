@@ -1,7 +1,7 @@
 var PROJECTS = [
     {
         'name': 'CodeHS',
-        'description': 'Site for teaching coding to high schools.',
+        'description': 'Compehensive platform for teaching coding to schools.',
         'link': 'http://codehs.com',
         'status': 'Active',
         'dateStarted': '2012',
@@ -44,6 +44,25 @@ var PROJECTS = [
         'dateStarted': '2011',
         'category': 'Tool',
         'image': 'fb.png',
+    },
+    {
+        'name': 'Dogetoken',
+        'description': 'Simple ERC20 token with smart contract and bonus',
+        'link': 'http://dogetoken.com',
+        'status': 'Active',
+        'source': 'https://github.com/jkeesh/dogetoken/',
+        'dateStarted': '2017',
+        'category': 'Cryptocurrency',
+        'image': 'doge.jpg',
+    },
+    {
+        'name': 'Coin Op Fund',
+        'description': 'Tracker dashboard for cryptocurrency fund',
+        'link': 'http://coinopfund.com',
+        'status': 'Active',
+        'dateStarted': '2017',
+        'category': 'Cryptocurrency',
+        'image': 'coinop.jpg',
     },
     {
         'name': 'TSLA Bot',
