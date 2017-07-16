@@ -36,6 +36,15 @@ var PROJECTS = [
         'image': 'jeremykeeshin.png',
     },
     {
+        'name': 'Flipside Puzzles',
+        'description': 'Interactive rebus and jumble puzzle challenge solver for the flipside',
+        'link': 'http://stanfordflipside.com/category/puzzles/',
+        'status': 'Active',
+        'dateStarted': '2009',
+        'category': 'Flipside',
+        'image': 'flipsidepuzzles.png',
+    },
+    {
         'name': 'Facebook Edgerank Bookmarklet',
         'description': 'Bookmarklet for Facebook to show who Facebook thinks your closest friends are',
         'link': 'http://thekeesh.com/2011/08/who-does-facebook-think-you-are-searching-for/',
