@@ -46,6 +46,16 @@ var PROJECTS = [
         'image': 'fb.png',
     },
     {
+        'name': 'Etherstatic',
+        'description': 'Publish and host webpages or text on the ethereum blockchain',
+        'link': 'http://etherstatic.com',
+        'status': 'Active',
+        'source': 'https://github.com/jkeesh/etherstatic/',
+        'dateStarted': '2017',
+        'category': 'Cryptocurrency',
+        'image': 'etherstatic.jpg',
+    },
+    {
         'name': 'Dogetoken',
         'description': 'Simple ERC20 token with smart contract and bonus',
         'link': 'http://dogetoken.com',
