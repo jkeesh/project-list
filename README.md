@@ -1,6 +1,8 @@
+# project list
+
 Listing of all my projects in a table format for easier tracking.
 
-[See a demo http://thekeesh.com/projectlist/] (http://thekeesh.com/projectlist/)
+See a demo http://thekeesh.com/projectlist/
 
 How to add a project:
 
@@ -10,10 +12,8 @@ How to add a project:
 it to the images/ folder.
 4. Commit and deploy with
 
-git push origin master; git push web master
+
+    git push origin master
+    git push web master
 
 
-todo:
-- add stanford flipside puzzles
-- add laneys website
-- review namecheap websites
